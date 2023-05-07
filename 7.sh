@@ -12,7 +12,7 @@ os_verify() {
 
     # Check OS version
     os_version=$(lsb_release -r | awk '{print $2}')
-    if [[ "$os_version" == "18.04" || "$os_version" == "20.04" ]]; then
+    if [[ "$os_version" == "18.04" || "$os_version" == "20.04" || "$os_version" == "22.04" ]]; then
         echo "Supported OS version detected"
     else
         echo "Unsupported OS version detected"
